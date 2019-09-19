@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 650px;
+            height: 550px;
+            border: 1px solid #ccc;
+        }
+        
+        #box>img {
+            width: 300px;
+            height: 250px;
+            margin: 10px;
+        }
+        
+        #tc {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .5);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            /* position: relative; */
+            /* display: none; */
+        }
+        #tc>span{
+            position: absolute;
+            top: 40px
+        }
+        
+        #tc.active {
+            display: block;
+        }
+        
+        #tc>img {
+            width: 1080px;
+            height: 600px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -300px;
+            margin-left: -550px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <!-- <img src="./img/1.jpg" alt="">
+        <img src="./img/2.jpg" alt="">
+        <img src="./img/3.jpg" alt="">
+        <img src="./img/4.jpg" alt=""> -->
+    </div>
+    <!-- <div id="tc">
+        <img src="./img/1.jpg" alt="">
+        <span>左侧</span>
+        <span>右侧</span>
+    </div> -->
+    <script src="../../lib/require.js" data-main="main.js"></script>
+</body>
+
+</html>

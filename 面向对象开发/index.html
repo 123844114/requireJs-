@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Person(name){
+            //构造函数中的this指向生成的对象本身
+            this.name=name //姓名
+        }
+        Person.prototype.eat=function(food){console.log( this.name+'吃饭'+food)}
+        Person.age='18'
+        var mayun = new Person('马云')
+        var zhangsan = new Person('张三')
+        mayun.eat('馄饨')
+        zhangsan.eat('饺子')
+        console.log(mayun)
+        console.log(zhangsan)
+    </script>
+</body>
+</html>

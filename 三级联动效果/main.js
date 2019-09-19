@@ -1,0 +1,19 @@
+require.config({
+    baseUrl:'./js',
+    paths:{
+        getEl:'./getEl',
+        data:'./data',
+        select:'./select'
+    }
+})
+require(['select','data','getEl'],function(select,data,getEl){
+    select(
+        {
+            data:data,
+            province:getEl.getDom('#province'),
+            city:getEl.getDom('#city'),
+            area:getEl.getDom('#area'),
+            btn:getEl.getDom('#btn')
+        }
+    )
+})

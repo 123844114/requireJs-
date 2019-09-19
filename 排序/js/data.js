@@ -1,0 +1,25 @@
+define(function(){
+    return [
+        {
+            name:'日本海啸预警',
+            count:628,
+            xin:true,
+            arrow:true
+        },{
+            name:'比利时大闸蟹',
+            count:123
+        },
+        {
+            name:'比利时大闸蟹',
+            count:344
+        },
+        {
+            name:'比利时大闸蟹',
+            count:333
+        },
+        {
+            name:'比利时大闸蟹',
+            count:5555
+        }
+    ]
+})

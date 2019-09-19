@@ -1,0 +1,25 @@
+/**
+ * 主入口文件
+ */
+require.config({
+    baseUrl:'./js',
+    paths:{
+        getEl:'./getEl',
+        message:'./message',
+        createMsg:'./createMsg',
+    }
+})
+require(['getEl','message'],function(getEl,message){
+    getEl.getDoms('button')[0].onclick=function(){
+        message.success('成功',1000)
+    }
+    getEl.getDoms('button')[1].onclick=function(){
+        message.warning('警告',1000)
+    }
+    getEl.getDoms('button')[2].onclick=function(){
+        message.info('信息',1000)
+    }
+    getEl.getDoms('button')[3].onclick=function(){
+        message.error('错误',1000)
+    }
+})

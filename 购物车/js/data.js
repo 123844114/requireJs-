@@ -1,0 +1,26 @@
+define(function(){
+    return [
+        {
+            title:'连衣裙',
+            price:80,
+            count:0
+        },
+        {
+            title:'T恤',
+            price:180,
+            count:0
+        },{
+            title:'拖鞋',
+            price:280,
+            count:0
+        },{
+            title:'西裤',
+            price:380,
+            count:0
+        },{
+            title:'职业装',
+            price:480,
+            count:0
+        }
+    ]
+})

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red
+        }
+    </style>
+</head>
+<body>
+    <div id='box'></div>
+    <script src="./velocity.min.js"></script>
+    <script>
+    console.log(Velocity)
+    var box = document.getElementById('box')
+    Velocity(box,{
+        width:400,
+        height:400,
+        'border-width':'10px',
+        'background-color':'#000',
+
+    },{
+        duration:500,
+        delay:1000,
+        begin:function(){
+            console.log('动画开始了')
+            box.innerHTML='动画开始了'
+        },
+        complete:function(){
+            console.log('动画结束了')
+            box.innerHTML='动画结束了'
+        }
+        // loop:true
+    })
+    </script>
+</body>
+</html>

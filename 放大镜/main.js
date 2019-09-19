@@ -1,0 +1,10 @@
+require.config({
+    baseUrl:'./js',
+    paths:{
+        getEl:'./getEl',
+        zoom:'./zoom'
+    }
+})
+require(['zoom'],function(zoom){
+    zoom()
+})
